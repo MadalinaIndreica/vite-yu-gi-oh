@@ -14,7 +14,7 @@ export default {
   created() {
     
     axios.get(this.store.apiUrl).then((resp) => {
-      console.log(resp);
+      
       this.store.cards = resp.data.data;
       
     });
