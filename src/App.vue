@@ -5,6 +5,7 @@ import { store } from "./store.js";
 import AppHeader from "./components/AppHeader.vue";
 import AppCardList from "./components/AppCardList.vue";
 import AppButton from "./components/AppButton.vue";
+import AppStats from "./components/AppStats.vue";
 
 export default {
   data() {
@@ -27,7 +28,7 @@ export default {
       
       })
   },
-  components: { AppHeader, AppCardList, AppButton},
+  components: { AppHeader, AppCardList, AppButton, AppStats },
   methods: {
     handleSelect() {
         axios.get(this.store.apiArcUrl, {
@@ -48,6 +49,7 @@ export default {
 
 <template>
    <AppHeader />
+   <AppStats/>
    <AppButton @cardsView="handleSelect"/>
    <AppCardList />
    
