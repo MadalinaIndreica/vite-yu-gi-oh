@@ -17,8 +17,8 @@ export default {
     <div class="section">
     <div class="container">
 
-        <div class="row ">
-            <div class="col-3 align-items-stretch" v-for="card in store.cards" :key="card.id">
+        <div class="row row-cols-5 g-4 mt-5">
+            <div class="align-items-stretch" v-for="card in store.cards" :key="card.id">
                 <AppCard :card="card" />
             </div>
         </div>
@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 .section{
-    background-color:rgb(212 143 56);
+    background-color:rgb(255, 160, 43);
     padding:4rem;
 
 }

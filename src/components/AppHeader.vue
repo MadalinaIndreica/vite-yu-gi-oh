@@ -7,7 +7,7 @@ export default {
 
 <template>
     <header>
-        <h1 class="py-4">Yu Gi Oh Api</h1>
+        <h1 class="py-4">Yu-Gi-Oh Api</h1>
     </header>
 
 </template>
